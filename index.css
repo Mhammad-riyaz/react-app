@@ -1,0 +1,169 @@
+body{
+  background-color: #FFFFFF;
+  font-family: 'Inter';
+  margin: 0;
+}
+
+.nav{
+  background-color: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0.5vw
+}
+.globe{
+  width: 2em;
+}
+
+.nav p{
+  color: #FFFFFF;
+  font-size: 1em;
+}
+.card{
+  display: flex;
+  width: 90%;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 3vw;
+}
+.scene{
+  width: 20vw;
+  border-radius: 10px;
+}
+.icon{
+  width: 1.1em;
+}
+.country{
+  font-size: 1.1rem;
+  margin: 0.3rem;
+}
+a{
+  font-size: 1rem;
+  color:#918E9B;
+  text-decoration: none;
+  border-bottom: 1px solid #918E9B;
+  margin-left: 0.8em;
+
+}
+.location{
+  display: flex;
+  gap: 0.2vw;
+  align-items: center;
+}
+
+h2{
+  font-weight: 700 ;
+  font-size: 2.8rem;
+  margin: 0;
+  color: #2B283A;
+  margin-bottom: 2vw;
+}
+
+.date{
+  font-weight: 700;
+  color: #2B283A;
+  font-size: 1rem;
+}
+.descript{
+  width: 85%;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.container-2{
+  align-self: center;
+}
+
+.card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card{
+  position: relative;
+  padding-left: 4rem;
+}
+.border{
+  position: absolute;
+  border-left: 0.4em solid #F55A5A;
+  top: 30px;
+  left: -10px;
+  bottom: 30px;
+}
+.image{
+  transition-duration: 0.7s;
+}
+.image:hover{
+  cursor: pointer;
+  /* transform: scale(9); */
+  transform: scale(1.01);
+  z-index: 1;
+}
+.location a:hover ~ .image{
+  transform: scale(9);
+}
+
+@media screen and (max-width:1500px) {
+  .border{
+    display: none;
+  }
+  .card{
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width:795px) {
+  .icon{
+    font-size: 0.8rem;
+  }
+  .country{
+    font-size: 0.8rem;
+  }
+  a{
+    font-size: 0.7rem;
+  }
+  h2{
+    font-size:1.7rem ;
+  }
+  .date{
+    font-size: 0.7rem;
+  }
+  .descript{
+    width: 80%;
+    font-size: 0.7rem;
+  }
+  .container-2{
+    align-self: flex-start;
+  }
+  
+ 
+}
+
+
+
+@media screen and (max-width:520px) {
+  .icon{
+    font-size: 0.6rem;
+  }
+  .country{
+    font-size: 0.6rem;
+  }
+  a{
+    font-size: 0.5rem;
+  }
+  h2{
+      font-size: 1.5rem;
+  }
+  .date{
+    font-size: 0.5rem;
+  }
+  .descript{
+    font-size: 0.5rem;
+    width: 90%;
+  }
+  .container-2{
+    align-self: flex-start;
+  }
+}
